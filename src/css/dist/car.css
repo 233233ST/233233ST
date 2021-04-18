@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#gouwu {
+    width: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.car {
+    margin: auto;
+    width: 1000px;
+    margin: 10px auto;
+}
+
+.car .panel-heading {
+    height: 60px;
+}
+
+.car .checkbox {
+    float: left;
+    height: 100%;
+}
+
+.car .nav {
+    float: right;
+    height: 100%;
+}
+
+.car .panel-footer {
+    height: 60px;
+}
+
+.car .panel-footer div {
+    float: left;
+    height: 100%;
+    line-height: 40px;
+}
+
+.car .panel-footer button {
+    float: right;
+    height: 100%;
+}
+
+.car .media {
+    display: flex;
+}
+
+.car .media-left {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.car .media-left label {
+    margin-right: 10px;
+}
+
+.car .media-object {
+    width: 100px;
+    height: 100px;
+}
+
+.car .media-body {
+    display: flex;
+    align-items: center;
+}
+
+.car .media-body .content {
+    flex: 4;
+    height: 100%;
+}
+
+.car .media-body .btn-group {
+    flex: 1;
+}
+
+.car .media-body .total {
+    text-align: center;
+    flex: 1;
+}
+
+.car .media-body .close {
+    flex: 1;
+}

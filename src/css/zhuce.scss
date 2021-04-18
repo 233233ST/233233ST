@@ -1,0 +1,199 @@
+#denglu {
+    background-color: #f3f1f4;
+    width: 100%;
+    padding-bottom: 100px;
+
+    .denglu {
+        width: 1000px;
+        height: 544px;
+        // background-color: antiquewhite;
+        margin: auto;
+
+        .dl_left {
+            width: 446px;
+            height: 544px;
+            float: left;
+
+            .dl_left_top {
+                width: 446px;
+                height: 118px;
+
+                img {
+                    float: left;
+                }
+
+                .reg_login_btn {
+                    background-color: rgb(88, 88, 88);
+                    float: right;
+                    width: 140px;
+                    height: 32px;
+                    margin: 45px 0 0 70px;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #fff;
+                    line-height: 32px;
+                    border-radius: 10px;
+
+                    span {
+                        color: #fffaa8;
+                    }
+                }
+            }
+
+            .dl_left_bottom {
+                box-sizing: border-box;
+                padding: 20px;
+                width: 446px;
+                height: 522px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                background-color: #eeecef;
+
+                h2 {
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #d63e49;
+                    border-bottom: 1px solid #ccc;
+
+                    span {
+                        margin-left: 10px;
+                        font-size: 12px;
+                        line-height: 28px;
+                        font-weight: 100;
+                        color: black;
+                    }
+                }
+
+                h2:nth-of-type(2) {
+                    border: none;
+
+                    img {
+                        cursor: pointer;
+
+                    }
+                }
+
+                form {
+                    position: relative;
+                    overflow: hidden;
+                    width: 426px;
+                    height: 233px;
+                    border-bottom: 1px solid #ccc;
+
+                    .tips1 {
+                        position: absolute;
+                        display: none;
+                        font-size: 12px;
+                        color: #d41f2b;
+                        left: 114px;
+                        top: 64px;
+                    }
+
+                    .tips2 {
+                        position: absolute;
+                        display: none;
+                        font-size: 12px;
+                        color: #d41f2b;
+                        left: 114px;
+                        top: 126px;
+                    }
+
+                    .tips3 {
+                        position: absolute;
+                        display: none;
+                        font-size: 12px;
+                        color: #d41f2b;
+                        left: 114px;
+                        top: 186px;
+                    }
+
+                    dt {
+                        margin-top: 20px;
+                        float: left;
+                        clear: left;
+                        width: 110px;
+                        padding: 3px;
+                        text-align: right;
+                        color: #555;
+                        line-height: 36px;
+
+                    }
+
+                    dd {
+                        margin-top: 20px;
+                        float: left;
+                        width: 290px;
+                        padding: 3px;
+                        line-height: 36px;
+
+                        .in_put {
+                            float: left;
+                            background-color: #fff;
+                            border: 1px solid #e5e3e5;
+                            width: 240px;
+                            height: 36px;
+                            padding: 3px;
+                            line-height: 36px;
+                            color: #808080;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    .ddd {
+                        position: relative;
+                        margin-left: 110px;
+                        float: left;
+                        width: 290px;
+                        padding: 3px;
+                        line-height: 0px;
+
+                        a {
+                            position: absolute;
+                            color: #d41f2b;
+                            font-size: 10px;
+                            top: 10px;
+                        }
+
+                    }
+
+                    .login_btn {
+                        border-radius: 10px;
+                        width: 130px;
+                        height: 40px;
+                        border: none;
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: #fff;
+                        margin-top: 10px;
+                        margin-left: 113px;
+                        cursor: pointer;
+                        background-color: #d41f2b;
+                    }
+
+                    a {
+                        position: relative;
+                        top: 12px;
+
+                        .red {
+                            font-size: 12px;
+                            color: #d41f2b;
+                        }
+                    }
+                }
+
+                .zhuce {
+                    height: 352px;
+                }
+            }
+        }
+
+        .dl_right {
+            float: right;
+            width: 500px;
+            padding-top: 110px;
+            text-align: center;
+        }
+    }
+}
