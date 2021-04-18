@@ -53,7 +53,7 @@ password.onblur = function () {
 }
 
 form.onsubmit = function () {
-    
+
     let e = window.event;
     e.preventDefault();
     pAjax({

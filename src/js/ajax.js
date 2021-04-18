@@ -119,7 +119,7 @@ function pAjax(obj) {
             success: function (res) {
                 resolve(res)
             },
-            error: function(err){
+            error: function (err) {
                 reject(err)
             }
         })

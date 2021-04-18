@@ -17,14 +17,26 @@ var jsmin = require('gulp-uglify');
 
 var pipeline = require('readable-stream').pipeline;
 
-var babel = require('gulp-babel');
+var babel = require('gulp-babel'); // gulp.task('es6-es5', function () {
+//     return pipeline(
+//         gulp.src('src/js/*.js').pipe(babel({
+//             presets: ["@babel/env"],
+//             // plugins: [
+//             //     "transform-runtime",
+//             //     {
+//             //         "helpers": false,
+//             //         "polyfill": false,
+//             //         "regenerator": true,
+//             //         "moduleName": "babel-runtime"
+//             //     }
+//             // ]
+//         })),
+//         jsmin(),
+//         gulp.dest('./dist/js')
+//     );
+// });
 
-gulp.task('es6-es5', function () {
-  return pipeline(gulp.src('src/js/*.js').pipe(babel({
-    presets: ["@babel/env"],
-    plugins: []
-  })), jsmin(), gulp.dest('./dist/js'));
-});
+
 gulp.task('buildHtml', function (done) {
   gulp.src('./src/index.html') // 压缩html
   .pipe(htmlmin({
@@ -99,7 +111,8 @@ gulp.task('default', function () {
   // 启动服务器
   browserSync({
     // 设置服务器根目录
-    server: './dist',
+    // server: './dist',
+    proxy: 'http://bt.com/butao/dist',
     // 代理其他服务器(既能实现自动刷新，也能保持其他服务器的特性)
     // proxy:'http://localhost:3000',
     port: 8080,
@@ -114,6 +127,5 @@ gulp.task('default', function () {
   gulp.watch('./src/views/*.html', gulp.series('allHtml')); //css
 
   gulp.watch('./src/css/dist/index.css', gulp.series('buildCss'));
-  gulp.watch('./src/img/*', gulp.series('imageyh'));
-  gulp.watch('./src/js/*.js', gulp.series('es6-es5'));
+  gulp.watch('./src/img/*', gulp.series('imageyh')); // gulp.watch('./src/js/*.js', gulp.series('es6-es5'))
 });

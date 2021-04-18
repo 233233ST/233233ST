@@ -9,27 +9,27 @@ const jsmin = require('gulp-uglify');
 const pipeline = require('readable-stream').pipeline;
 const babel = require('gulp-babel');
 
-gulp.task('es6-es5', function () {
-    return pipeline(
-        gulp.src('src/js/*.js').pipe(babel({
-            presets: ["@babel/env"],
-            // plugins: [
-            //     "transform-runtime",
-            //     {
-            //         "helpers": false,
-            //         "polyfill": false,
-            //         "regenerator": true,
-            //         "moduleName": "babel-runtime"
-            //     }
+// gulp.task('es6-es5', function () {
+//     return pipeline(
+//         gulp.src('src/js/*.js').pipe(babel({
+//             presets: ["@babel/env"],
+//             // plugins: [
+//             //     "transform-runtime",
+//             //     {
+//             //         "helpers": false,
+//             //         "polyfill": false,
+//             //         "regenerator": true,
+//             //         "moduleName": "babel-runtime"
+//             //     }
 
-            // ]
+//             // ]
 
-        })),
+//         })),
 
-        jsmin(),
-        gulp.dest('./dist/js')
-    );
-});
+//         jsmin(),
+//         gulp.dest('./dist/js')
+//     );
+// });
 
 
 
@@ -133,5 +133,5 @@ gulp.task('default', () => {
     //css
     gulp.watch('./src/css/dist/index.css', gulp.series('buildCss'))
     gulp.watch('./src/img/*', gulp.series('imageyh'))
-    gulp.watch('./src/js/*.js', gulp.series('es6-es5'))
+    // gulp.watch('./src/js/*.js', gulp.series('es6-es5'))
 })
